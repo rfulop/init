@@ -1,0 +1,5 @@
+sudo apt-get update >> /var/log/update_script.log &&
+sudo apt-get -y upgrade >> /var/log/update_script.log
+
+# add this line to /etc/crontab:
+# 0 4 * * 1 root sh [PathToThisFile]
